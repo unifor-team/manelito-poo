@@ -1,5 +1,5 @@
-"Carlos Maia" 000.000.000-00 (00)90000-0000 carlosmaia@mail.com 0000000001
-"Fernando Paiva Silva" 100.000.000-00 (10)91000-0000 fernandopaiva@mail.com null
-"Clarice Oliveria Lopes Dinadi" 200.000.000-00 (10)92000-0000 claricelopes@mail.com 00000000001
-"Lucas Pontes Assunção" 300.000.000-00 (10)93000-0000 lucas001@mail.com null
+"Carlos Maia" 000.000.000-00 (00)90000-0000 carlosmaia@mail.com 0000000001 2500,00
+"Fernando Paiva Silva" 100.000.000-00 (10)91000-0000 fernandopaiva@mail.com null 3150,00
+"Clarice Oliveria Lopes Dinadi" 200.000.000-00 (10)92000-0000 claricelopes@mail.com 00000000001 4099,00
+"Lucas Pontes Assunção" 300.000.000-00 (10)93000-0000 lucas001@mail.com null 1350,00
 

@@ -3,10 +3,12 @@ import java.io.FileWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.Scanner;
 
 import base.Pessoa;
 import base.Veiculo;
+import entities.Motorista;
 import main.LeituraPessoa;
 import main.LeituraVeiculo;
 
@@ -27,13 +29,21 @@ public class App {
         new LeituraVeiculo(vehicleFile, vehicleScanner, veiculos);
         new LeituraPessoa(personFile, personScanner, pessoas);
 
-        for (Veiculo a : veiculos) {
-            vehicleWriteFile.write(a.toString());
-        }
+        Long veiculosAzuis = veiculos
+            .stream()
+            .filter(veiculo -> veiculo.getCor().equals("azul"))
+            .count();
+        
+        OptionalDouble mediaSalarioOptional = pessoas
+            .stream()
+            .filter(pessoa -> pessoa instanceof Motorista)
+            .mapToDouble(pessoa -> ((Motorista) pessoa).getSalario())
+            .average();
 
-        for (Pessoa a : pessoas) {
-            personWriteFile.write(a.toString());
-        }
+        Double mediaSalarioMotorista = mediaSalarioOptional.orElse(0.0);
+        
+        vehicleWriteFile.write("Veículos azuis: " + veiculosAzuis);
+        personWriteFile.write("Média salarial dos motoristas: " + mediaSalarioMotorista);
 
         vehicleWriteFile.close();
         personWriteFile.close();

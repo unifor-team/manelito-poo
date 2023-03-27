@@ -1,1 +1,1 @@
-Veiculo: conversível Porsche-911 1963 branco 1234-567Veiculo: scooter Honda 2017 azul 0000-000Veiculo: esportiva Yamaha-YZF 2015 vermelha 9876-543Veiculo: sedã Fiat-Cronos 2018 cinza-grafite 0101-010
+Veículos azuis: 2

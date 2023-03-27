@@ -26,13 +26,14 @@ public class LeituraPessoa {
       String phone = restOfLineScanner.next();
       String email = restOfLineScanner.next();
       String cnh = restOfLineScanner.next();
+      Double salario = restOfLineScanner.nextDouble();
 
       if (cnh.equals("null")) {
         cnh = null;
       }
 
       if (cnh != null) {
-        pessoa = new Motorista(fullName, cpf, phone, email, cnh);
+        pessoa = new Motorista(fullName, cpf, phone, email, cnh, salario);
       } else {
         pessoa = new Passageiro(fullName, cpf, phone, email);
       }
